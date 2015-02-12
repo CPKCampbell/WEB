@@ -100,7 +100,7 @@ alto = \relative c' {
   f'4  f   f  d8 c~ c2 f4 f  f4. f8 f4 d8 c~ c2. r4 e4 e d d8 c~ c2 e4 e
   %30
   f4.  f8 f4 d8 c~ c2. r4 f4 f f d8 c~ c2 f4 f f4. f8 f4 e8 d~ d2 r4 f8 f
-  f4. f8~ f4 \breathe f8 f f4. f8~ f4 \breathe f4 f4. f8 e4 d8 c~ c4  <a'  f >4  <f c > <c a>
+  f4. f8~ f4 \breathe f8 f f4. f8~ f4 \breathe f4 f4. f8 e4 d8 c~ c4  <a'  f >4  (<f c >) <c a>
   <d b>2 ( <e bf>) <c a>4 \breathe a'4 ( f ) c d1 ( e) c2. r4 R1
   %46
   \key g \major
@@ -118,7 +118,7 @@ alto = \relative c' {
   g4 g g e8 d~ d2 g4 g g4. g8 fs4 fs8 e~ e2 r4 b'8 b
   %74
   d4. c8~ c4 \breathe c8 c b4.  a8~ a4 \breathe g4
-  g4. g8 fs4  e8 d~ d4 \breathe <b' g>4 ( < g d> ) <d b>
+  g4. g8 fs4  e8 d~ d4 \breathe <b' g>4 ( < g  d > ) <d b>
   %78
   <e cs>2 ( <fs c> ) <d b>4 \breathe b' ( g) d e1 ( fs )
   %82
