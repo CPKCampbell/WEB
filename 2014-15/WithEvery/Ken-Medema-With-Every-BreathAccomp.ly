@@ -126,7 +126,7 @@ tenor = \relative c' {
   bf4 c d ef2. ef4 d c bf2. d4 c bf
   bf2. a4 bf c bf2. bf4 c d c2.
   %80
-  a4 d c bf2. c4 bf af bf2.~ bf~
+  a4 d c bf2. c4 bf af bf2.~ bf?~
   bf2. g4 a bf4 a2. a g2 r4
   %90
   g4 g g g2. c a a4 a a
@@ -162,7 +162,7 @@ bass = \relative c {
   g4 a b e,2. g fs2 fs4
   fs4 g a d,2.~ d~ d4 r r
   %54
-  g4 fs a a2. g fs d4 e fs
+  g4 fs e a2. g fs d4 e fs
   g2 g4 fs2 fs4 e2. g4 a b e,2.
   %64
   a4 b c fs,2. fs4 g a g2.~ g~ g4 r r
