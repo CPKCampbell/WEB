@@ -83,7 +83,7 @@ alto = \relative c' {
   fs4 g a d,2.~ d~ d4 r r
   d4 d d e2. c d d4 d d
   d2 d4 d2 d4 e2. g4 a b e,2. \rm
-  a4 b c fs,2. c'4 b a g2.~ g~ g4 r r
+  a4 b c fs,2. fs4 g a g2.~ g~ g4 r r
   %70
   g4 g g g2. fs4 fs fs g2. bf4 a bf
   g2. f4 g a f2. g4 g g g2.
