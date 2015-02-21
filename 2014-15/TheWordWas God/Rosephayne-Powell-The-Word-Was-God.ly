@@ -25,7 +25,10 @@ sopranoVoice = \relative c'' {
   e4-. a, r4 a8 a c4-. d-. a r8 e' g4-> g8 g~ g g fs e
   fs8 fs g4-. e r4 R1*6 |
   %12
-  R1 
+  R1 a8\p a a-. a~-.-> a a g e g4-. e8 e g4-. a-.
+  %15
+  a4-. e r4 e8 e g4-. a-. e-. r4 a8\mp a a-. a~-.-> a a g e |
+  
   
   
 }
