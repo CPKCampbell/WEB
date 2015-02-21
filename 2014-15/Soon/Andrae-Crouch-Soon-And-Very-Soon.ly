@@ -355,4 +355,3 @@ pianoPart = \new PianoStaff \with {
     \midi { }
   }
 }
-
