@@ -23,7 +23,7 @@ sopranoVoice = \relative c'' {
   \dynamicUp
   e,8\p e e-. e->~ e e d c d4-. c8 c d4-. e-.
   e4-. a, r4 a8 a c4-. d-. a r8 e' g4-> g8 g~ g g fs e
-  fs8 fs g4-. e r4 R1*6 |
+  fs8 fs g4-. e r4 R1*5 |
   %12
   R1 a8\p a a-. a~-.-> a a g e g4-. e8 e g4-. a-.
   %15
@@ -42,8 +42,26 @@ sopranoVoice = \relative c'' {
   %33
   a4. g8~ g e4 f8~\< <<f1 { s4 s4\! s4\> s4\! }>> f4. g8~ g f4 e8~\< |
   << e2. { s4 s4\! s4\> } >> r4\! a4.\mf g8~ g e4 f8~\< <<f1 { s2 s4\> s4\! } >>
-  
-  
+  %39
+  f4. g8~ g  f4 e8~\< |
+  << e2. { s4 s4\! s4\> } >> r4\! a4.\mf g8~ g e4 f8~\< <<f1 { s2 s4\> s4\! } >> |
+  f4. g8~ g f4 e8~ << e1 { s4 s4\> s4 s4\mp } >> \breathe
+  %45
+  R1*20
+  %65
+  a8\p a a-. a~-.-> a a g e g4-. e8 e g4-. a-.
+  %67
+  a4-. e r4 e8 e g4-. a-. e-.r4
+  %69
+  << { c'8 c c-. c->~ c c b a b4-. a8 a b4-. c-.
+       c4-. a r a8 a b4-. c-. a r4
+       r4 a8-> a b4-. c-. c-. a r2 r4 a8 a b4-> r4
+       r4 a8^"legato" a b4\< c r2 e2\sfp\<~ e1\ff}
+     {a,8 a a-. a->~a a g e g4-. e8 e g4-. a-.
+      a4-. e s4 e8 e g4-. a-. e-. s4
+      s1*2 s4 e8-> e g4-> s4
+      s1 s2 b2\sfp~ b1\ff }
+  >>
 }
 
 verseSopranoVoice = \lyricmode {
