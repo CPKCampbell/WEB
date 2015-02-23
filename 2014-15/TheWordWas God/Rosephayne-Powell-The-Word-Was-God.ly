@@ -33,7 +33,15 @@ sopranoVoice = \relative c'' {
   g4-. a-. e r a8-.\mf a a-. a->~ a a g e
   %22
   g4-. e8 e g4-. a-. a-. e r e8 e
-  
+  %24
+  g4-. a-. e r a8\f a a-. a~-.-> a a g e |
+  g4-. e8 e g4-. a-. a-. e r4 e8 e |
+  %28
+  g4-.\< a-. e\ff-- \breathe r4 a4.\p^"dolce, legato, not slower" g8~ g e4 f8~ \< |
+  << f1 { s4 s4\! s4\> s4\!} >> f4. g8~ g f4 e8~\< << e2. { s4 s4\! s4\>  } >> r4\! |
+  %33
+  a4. g8~ g e4 f8~\< <<f1 { s4 s4\! s4\> s4\! }>> f4. g8~ g f4 e8~\< |
+  << e2. { s4 s4\! s4\> } >> r4\! a4.\mf g8~ g e4 f8~\< <<f1 { s2 s4\> s4\! } >>
   
   
 }
