@@ -21,7 +21,7 @@ global = {
 sopranoVoice = \relative c'' {
   \global
   \dynamicUp
-  e,8\p e e-. e->~ e e d c d4-. c8 c d4-. e-.
+ e,8\p e e-. e->~ e e d c d4-. c8 c d4-. e-.
   e4-. a, r4 a8 a c4-. d-. a r8 e' g4-> g8 g~ g g fs e
   fs8 fs g4-. e r4 R1*5 |
   %12
@@ -73,7 +73,8 @@ altoVoice = \relative c' {
   \global
   \dynamicUp
   % Music follows here.
-  
+  e8\p e e-. e->~ e e d c d4-. c8 cd4-. e-.
+
 }
 
 verseAltoVoice = \lyricmode {
