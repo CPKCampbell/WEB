@@ -73,8 +73,41 @@ altoVoice = \relative c' {
   \global
   \dynamicUp
   % Music follows here.
-  e8\p e e-. e->~ e e d c d4-. c8 cd4-. e-.
-
+  e8\p e e-. e->~ e e d c d4-. c8 c d4-. e-.
+ e4-. a, r4 a8 a c4-. d-. a r8 c e4-> e8 e~ e e d c |
+ d8 d e4-. c r4 R1*6
+ %13
+ r2 r4 r8 c\mp e4-> e8 e~ e e d c |
+ %15
+ d8 d e4-. c r8 c e4-> e8 e~ e e d c d d e4-. c r8 c |
+ %18
+ e4-> e8 e~ e e d c d d e4-. c r8 c |
+ %20
+ e4-> e8 e~ e e d c d d e4-. c r8 c\mf |
+ %22
+ e4-> e8 e~ e e d c d d e4-. c r8 c |
+ %24
+ e4-> e8 e~ e e d c d d e4-. c r8 c\f |
+ e4-> e8 e~ e e d c d d e4-. \phrasingSlurDashed c\( c8\) c |
+ %28
+ d4-.\< e-. c--\ff \breathe r4 e4.\p d8~ d c4 d8~ 
+ << d1 { s4\< s4 s4\> s4\! } >> d4. e8~ e d4 c8~ c2. r4 |
+ %33
+ e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8~ 
+ c2. r4 |
+ %37
+ << {
+   e4.\mf d8~ d c4 d8~ d1 d4. e8~ e d4 c8~ c2. r4
+   e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8 c2 b 
+    }
+    {c4. b8~ b a4 b8~ b1 b4. c8~ c b4 a8~ a2. r4
+     c4. b8~ b a4 b8~ b1 b4. c8~ c b4 s8 s2 s2
+    }
+ >>
+ %45
+ R1*11
+ 
+ 
 }
 
 verseAltoVoice = \lyricmode {
