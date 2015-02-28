@@ -15,6 +15,7 @@
 global = {
   \key c \major
   \time 2/2
+  \numericTimeSignature
   \tempo "Strongly" 2=60
 }
 
@@ -125,8 +126,17 @@ d4-. e-. c r |
     \bar "||"
   }
   % alto II
-  { s1*19
-  }
+  {e8 e e-. e~-> e e d c d4-. c8 c d4-. e-. e-. c r4 c8 c |
+   d4-. e-. c r4 e8 e e-. e->~ e e d c |
+   %65
+   d4-. c8 c d4-. e-. e-. c r4 c8 c d4-. e-. c r4 |
+   e8 e e-. e~-> e e d c d4-. c8 c d4-. e-. e-. c r4 c8 c |
+   %71
+   d4-. e-. c r4 e8\f e e-. e~-> e e d c
+   d4-.\( c8->\) c d4-. e-. e-. c r4 c8-> c d4-> s4 s2 |
+   %76
+   s4 s8 s8 s4 s4 s2 s2 s1
+     }
   >>
 }
 
@@ -134,9 +144,6 @@ verseAltoVoice = \lyricmode {
   % Lyrics follow here.
 
 }
-
-
-
 
 tenorVoice = \relative c' {
   \global
