@@ -148,8 +148,56 @@ verseAltoVoice = \lyricmode {
 tenorVoice = \relative c' {
   \global
   \dynamicUp
-  % Music follows here.
+ R1*6 c8\p c c-. c->~ c c b a b4-. a8 a b4-. c-.
+ c4-. a r4 a8 a b4-. c-. a r8 a\mp c4-> c8 c~ c c b a |
+ %12
+ b8 b\> c4-. a r4\! r2 r4 r8 a\mp c4-> c8 c~ c c b a |
+b8 b c4-. a\( a8\p\) a b4-. c-. a r8 c\mp c4-> c8 c~ c c b a |
+%16
+b8 b c4-. a\( a8\) a b4-. c-. a r8 a |
+c4-> c8 c~ c c b a b b c4-. a\( a8\) a |
+b4-. c-. a r8 a\mf c4-> c8 c~ c c b a |
+%24
+b8 b c4-. a a8 a b4-. c-. a r8 a\f |
+c4-> c8 c~ c c b a b b c4-. a\( a8\) a |
+b4-.\< c-. a--\ff \breathe r4 R1 |
+%30
+r4 b\p\< c d b1\>~ b4\! b c b a1~ a8 r8 b4 c d b1~
+%36
+b4 b c b a1\mf~ a8 r b4 \< c d
+%39
+b1\!\>~ b4 b c b a1~ a8 r b4 c d gs,4. a8~ a gs4 a8~ (a2 b\> ) \breathe |
+%45
+R1*2 a8\mp a a-. a~-> a a g e g4-. e8 e g4-. a-. |
+%49
+a4-. e r4 e8 e g4-. a-. e r4 |
+%51
+<<
+  % tenor I
+  {
+    c'8 c c-. c->~ c c b a b4-. a8 a b4-. c-. |
+    c4-. a r4 a8 a b4-. c-. a r4 |
+c8 c c-. c->~ c c b a b4\mp-. a8 a b4-. c-. |
+%57
+c4-. a r4 a8 a b4-. c-. a r4 |
+%59
+c8\mf c c-. c->~ c c b a b4-. a8 a b4-. c-. |
+c4-. a r4 a8 a b4-. c-. a r4 |
+c8 c c-. c->~ c c b a b4-. a8 a b4-. c-. |
+%68
+c4-. a r4 a8 a b4-. c-. a r4 |
+c8\mf c c-. c->~ c c b a b4-. a8 a b4-. c-. |
+c4-. a r4 a8 a b4-. c-. a r4 |
+c8 c c-. c->~ c c b a b4-. a8 a b4-. c-. |
+R1 c4-. a r4 a8-> a b4-> r4 r c8->\f c
+d4-> c8 c d4\< e r2\! d2\sfp\<~ d1\ff
+\bar "||"
+  }
+  % tenor II
+  {
 
+  }
+>>
 }
 
 verseTenorVoice = \lyricmode {
@@ -160,7 +208,7 @@ verseTenorVoice = \lyricmode {
 bassVoice = \relative c {
   \global
   \dynamicUp
-  % Music follows here.
+ R1*6 a8\p a a-. a->~ a a g e g4-. e8 e g4-. a-.
 
 }
 
