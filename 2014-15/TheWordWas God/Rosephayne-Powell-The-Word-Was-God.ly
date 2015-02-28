@@ -66,7 +66,7 @@ sopranoVoice = \relative c'' {
 
 verseSopranoVoice = \lyricmode {
   % Lyrics follow here.
-  
+
 }
 
 altoVoice = \relative c' {
@@ -90,29 +90,49 @@ altoVoice = \relative c' {
  e4-> e8 e~ e e d c d d e4-. c r8 c\f |
  e4-> e8 e~ e e d c d d e4-. \phrasingSlurDashed c\( c8\) c |
  %28
- d4-.\< e-. c--\ff \breathe r4 e4.\p d8~ d c4 d8~ 
+ d4-.\< e-. c--\ff \breathe r4 e4.\p d8~ d c4 d8~
  << d1 { s4\< s4 s4\> s4\! } >> d4. e8~ e d4 c8~ c2. r4 |
  %33
- e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8~ 
+ e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8~
  c2. r4 |
  %37
  << {
    e4.\mf d8~ d c4 d8~ d1 d4. e8~ e d4 c8~ c2. r4
-   e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8 c2 b 
+   e4. d8~ d c4 d8~ d1 d4. e8~ e d4 c8~  (c2 b )
     }
     {c4. b8~ b a4 b8~ b1 b4. c8~ c b4 a8~ a2. r4
      c4. b8~ b a4 b8~ b1 b4. c8~ c b4 s8 s2 s2
     }
  >>
- %45
  R1*11
- 
- 
+ %56
+e8\mf e e-. e->~ e e d c d4-. c8 c d4-. e-. e-. c r4 c8 c |
+d4-. e-. c r |
+%60
+
+<<
+  %alto I
+  { g'8 g g-. g~ g g fs e fs4 e8 e fs4-. g-. g-.  e r4 e8 e |
+    fs4-. g-. e r4 g8 g g-. g->~ g g fs e |
+    fs4-. e8 e fs4-. g-. g-. e r4 e8 e |
+    %67
+    fs4-. g-. e r4 g8^"mf" g g-. g~-> g g fs e |
+    fs4-. e8 e fs4-. g-. g-. e r4 e8 e |
+    %71
+    fs4-. g-. e r4 g8\f g g-. g~-> g g fs e |
+    fs4-.\( e8->\) e fs4-. g-. g-.  e r4 e8-> e fs4-> r4 r2 |
+    r4 e8 e g4\< a\! r2 g2~\sfp\< g1\ff
+    \bar "||"
+  }
+  % alto II
+  { s1*19
+  }
+  >>
 }
 
 verseAltoVoice = \lyricmode {
   % Lyrics follow here.
-  
+
 }
 
 
@@ -122,24 +142,24 @@ tenorVoice = \relative c' {
   \global
   \dynamicUp
   % Music follows here.
-  
+
 }
 
 verseTenorVoice = \lyricmode {
   % Lyrics follow here.
-  
+
 }
 
 bassVoice = \relative c {
   \global
   \dynamicUp
   % Music follows here.
-  
+
 }
 
 verseBassVoice = \lyricmode {
   % Lyrics follow here.
-  
+
 }
 
 sopranoVoicePart = \new Staff \with {
