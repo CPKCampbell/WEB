@@ -225,7 +225,23 @@ verseTenorVoice = \lyricmode {
 bassVoice = \relative c {
   \global
   \dynamicUp
- R1*6 a8\p a a-. a->~ a a g e g4-. e8 e g4-. a-.
+ R1*6 a'8\p a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+ %9
+ a4-. e r4 e8 e g4-. a-. e r8 e\mp a4-> a8 a~ a a g e |
+ g8 g\> a4-. e r4 a8\p a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+ a4-. e r4 e8 e g4-. a-. e r4 a8\mp a a-. a->~ a a g e |
+ %18
+ g4-. e8 e g4-. a-. a-. e r4 e8 e |
+ g4-. a-. e r4 a8\mf a a-. a->~ a a g e |
+ g4-. e8 e g4-. a-. a-. e r4 e8 e |
+ %24
+g4-. a-. e r4  a8\f a a-. a->~ a a g e |
+ g4-. e8 e g4-. a-. a-. e r4 e8 e |
+
+g4-.\< a-. e--\ff \breathe < d g,>4\p < e a,>1~
+%30
+q q~ q q~ q q~ q q~\mf q q~ q e1->~ e e4. e8~ e e4 e8~ e1 |
+%45
 
 }
 
