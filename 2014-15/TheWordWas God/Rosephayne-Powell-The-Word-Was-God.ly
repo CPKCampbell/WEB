@@ -195,7 +195,24 @@ d4-> c8 c d4\< e r2\! d2\sfp\<~ d1\ff
   }
   % tenor II
   {
-
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+a4-. e r4 e8 e g4-. a-. e r4 |
+%55
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+a4-. e r4 e8 e g4-. a-. e r4 |
+%59
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+a4-. e r4 e8 e g4-. a-. e r4 |
+%63
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+a4-. e r4 e8 e g4-. a-. e r4 |
+%67
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+a4-. e r4 e8 e g4-. a-. e r4 |
+%71
+a8 a a-. a->~ a a g e g4-. e8 e g4-. a-. |
+s1 s4 s4 s4 s8 s8 s4 s4 s4 s8 s8 |
+s4 s8 s8 s4 c4 s2 g2~\sfp g1\ff
   }
 >>
 }
