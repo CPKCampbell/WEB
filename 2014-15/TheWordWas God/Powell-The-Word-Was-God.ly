@@ -4,7 +4,7 @@
 \header {
   title = "The Word Was God"
   instrument = "SSAATTBB, Unaccompanied"
-  composer = "Rosephayne Powell"
+  composer = "Rosephanye Powell"
   poet = "John 1: 1-3"
 }
 
@@ -71,8 +71,23 @@ sopranoVoice = \relative c'' {
 }
 
 verseSopranoVoice = \lyricmode {
-  % Lyrics follow here.
-
+ In the be -- gin -- ning was the Word,
+ and the Word was with God,
+ and the Word was God.
+ The same was in __ (uh) the be -- gin -- ning with God.
+In the be -- gin -- ning was the Word,
+ and the Word was with God,
+ and the Word was God.
+ In the be -- gin -- ning was the Word,
+ and the Word was with God,
+ and the Word was God.
+ In the be -- gin -- ning was the Word,
+ and the Word was with God,
+ and the Word was God.
+ In the be -- gin -- ning was the Word,
+ and the Word was with God,
+ and the Word was God.
+ %29
 }
 
 altoVoice = \relative c' {
