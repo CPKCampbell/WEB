@@ -15,8 +15,9 @@ global = {
   \key c \major
   \time 3/4
   \numericTimeSignature
-  \tempo "Allegretto" 4=120
+  \tempo "Allegretto" 4=108
   \compressFullBarRests
+  \set Timing.beamExceptions = #'()
 }
 flute = \relative c'' {
   \global
@@ -51,7 +52,7 @@ r4. c8 e g f g f e d f e4 g4. a8 g2.~ |
 %79
 g4 r8 c, d g e f e d c b a4 c4. f8 e4 d4.  c8 |
 %83
-g'8 a a f e f e c~ c4. b8 c4 r8 b c e a4 g2 f4 g4. f8 |
+g'8 a g f e f e c~ c4. b8 c4 r8 b c e a4 g2 f4 g4. f8 |
 %88
 a4 e2 r8 d c d e f c'2-- a4 g-> a2~ a8 g f e d c |
 %93
