@@ -9,3 +9,10 @@
 *.png
 *.xml
 *.MID*
+*.au
+*.wav
+*.ppt
+*.aup
+*.peak
+*.bak
+*.ardour
