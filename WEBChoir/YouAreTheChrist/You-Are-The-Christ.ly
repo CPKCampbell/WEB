@@ -43,33 +43,33 @@ soprano = \relative c' {
   %27
   b8. b16 fs4 e r R1 |
   %29
-  R1 d4 e8 fs e4 e8 gs \time 2/4 fs4 gs8 a |
+  R1 d4 e8 fs e4 a8 gs \time 2/4 fs4 gs8 a |
   %32
   \time 4/4 b2. r4 cs cs8 e, fs4. r8 b4 b8 d, e4. r8 |
   %35
   a4 a8 cs, d4 d8 e fs4 gs8 a b4. r8 cs4 cs8 e, fs4. r8 |
   %38
-b4 b8 gs cs2\( d4\) cs8 b a4 e |
-%40
-r4 fs a gs a2. r8. e16 fs4 fs8 fs gs8. gs16 gs8 gs |
-%43
-a8. a16 a8 a b4 r8 b a4 a8 a b4 r8 b |
-%45
-c4 c8 c a4 c d1 R1 \key c \major |
-%48
-e4 e8 g, a4. r8 d4 d8 f, g4. r8 c4 c8 e, f4 f8 g |
-%51
-a4 b8 c d4. r8 e4 e8 g, a4. r8 d4 d8 b e2\( |
-%54
-f4\) e8 d c4 g r4 c e d c1 |
-%57
-r8 f e d c4 g r2 c2 e d <g c,>1~ q |
-\bar "|"
+  b4 b8 gs cs2\( d4\) cs8 b a4 e |
+  %40
+  r4 fs a gs a2. r8. e16 fs4 fs8 fs gs8. gs16 gs8 gs |
+  %43
+  a8. a16 a8 a b4 r8 b a4 a8 a b4 r8 b |
+  %45
+  c4 c8 c a4 c d1 R1 \key c \major |
+  %48
+  e4 e8 g, a4. r8 d4 d8 f, g4. r8 c4 c8 e, f4 f8 g |
+  %51
+  a4 b8 c d4. r8 e4 e8 g, a4. r8 d4 d8 b e2\( |
+  %54
+  f4\) e8 d c4 g r4 c e d c1 |
+  %57
+  r8 f e d c4 g r2 c2 e d <g c,>1~ q |
+  \bar "|"
 }
 
 alto = \relative c' {
   \global
-R1*4 r4 cs8 e fs4 e8 d e8. e16 e8 b cs4 r8 cs |
+  R1*4 r4 cs8 e fs4 e8 d e8. e16 e8 b cs4 r8 cs |
   %7
   cs4 cs8 e fs8. fs16 gs8 a b4 fs e r a fs8 a gs4 e |
   %10
@@ -81,7 +81,7 @@ R1*4 r4 cs8 e fs4 e8 d e8. e16 e8 b cs4 r8 cs |
   %19
   e4 e8 e e2\( fs4\) e8 d e4 e r4 fs a gs |
   %22
-a1 r2 r4 r8 e cs8. cs16 e4 fs r8 fs |
+  a1 r2 r4 r8 e cs8. cs16 e4 fs r8 fs |
   %25
   e4 e8 b cs4 r8 cs cs4 cs8 e fs4 gs8 a |
   %27
@@ -111,10 +111,47 @@ a1 r2 r4 r8 e cs8. cs16 e4 fs r8 fs |
   \bar "|"
 }
 
-tenor = \relative c' {
+tenor = \relative c {
   \global
-  % Music follows here.
-
+  R1*8 fs4 a8 fs e4 gs |
+  %10
+  a8. a16 gs8 fs e4 r fs gs8 a b4 a8 b \time 2/4 a4 gs8 fs |
+  %13
+  \time 4/4 a2 ( gs4) r a a8 cs a4. r8 gs4 gs8 gs a4. r8 |
+  %16
+  fs4 fs8 e fs4 fs8 gs a4 b8 fs a4 (gs8) r a4 a8 cs a4. r8 |
+  %19
+  gs4 gs8 b b4 ( as)\( b4\) fs8 fs a4 a r a fs b  |
+  %22 a due
+  a1 r2 r4 r8 e8 e8. e16 a4 a r8 a |
+  %25
+  gs4 gs8 b a4 r8 a8 e4 e8 a a4 b8 a |
+  %27
+  b8. b16 a4 gs r8 gs a4 fs8 a gs4 e |
+  %29
+  fs8. fs16 e8 d e4 r fs4 gs8 a b4 a8 b \time 2/4 a4 gs8 fs |
+  %32
+  \time 4/4 a2 ( gs4 ) r a a8 cs a4. r8 gs4 gs8 gs a4. r8 |
+  %35
+  fs4 fs8 e fs4 fs8 gs a4 b8 fs a4 (gs8) r a4 a8 cs a4. r8 |
+  %38
+  gs4 gs8 b b4 ( as)\( b\) fs8 fs a4 a |
+  %40
+  r4 a d d cs2. r8. a16 a4 a8 a b8. b16 b8 b |
+  %43
+  cs8. cs16 cs8 cs b4 r8 d c4 c8 c d4 r8 d |
+  %45
+  e4 e8 e e4 c f1 R1 |
+  %48
+  \key c \major
+  c4 c8 e c4. r8 b4 b8 b c4. r8 a4 a8 g a4 a8 b |
+  %51
+  c4 d8 a c4 (b8) r8 c4 c8 e c4. r8 b4 b8 d d4 ( cs )\( |
+  %54
+  d4\) a8 a c4 c r4 c c f e1 |
+  %57
+  r8 d c a c4 c r2 a c b <c g>1~ q \fermata
+  \bar "|"
 }
 
 bass = \relative c {
@@ -153,10 +190,10 @@ bass = \relative c {
   %51
   g4 g8 g g4. r8 c4 c8 c f,4. r8 g4 f8 f bf4 ( a)\( |
   %54
- d,4\) d8 d e4 e r f g g a1 |
- %57
- r8 d,8 e f g4 g r2 g g g c,1~ c \fermata |
- \bar "|"
+  d,4\) d8 d e4 e r f g g a1 |
+  %57
+  r8 d,8 e f g4 g r2 g g g c,1~ c \fermata |
+  \bar "|"
 
 
 }
@@ -178,7 +215,7 @@ rehearsalMidi = #
      \context Staff = $name {
        \set Score.midiMinimumVolume = #0.3
        \set Score.midiMaximumVolume = #0.5
-       \set Score.tempoWholesPerMinute = #(ly:make-moment 100 4)
+       \set Score.tempoWholesPerMinute = #(ly:make-moment 84 4)
        \set Staff.midiMinimumVolume = #0.8
        \set Staff.midiMaximumVolume = #1.0
        \set Staff.midiInstrument = $midiInstrument
@@ -227,7 +264,7 @@ choirPart = \new ChoirStaff <<
     \override VerticalAxisGroup #'staff-affinity = #CENTER
   } \lyricsto "tenor" \verse
   \new Staff \with {
-    midiInstrument = "baritone sax"
+    midiInstrument = "contrabass"
     instrumentName = "Bass"
   } {
     \clef bass
@@ -253,7 +290,7 @@ pianoPart = \new PianoStaff \with {
   >>
   \layout { }
   \midi {
-    \tempo 4=100
+    \tempo 4=84
   }
 }
 
@@ -285,7 +322,7 @@ pianoPart = \new PianoStaff \with {
 \book {
   \bookOutputSuffix "bass"
   \score {
-    \rehearsalMidi "bass" "tenor sax" \verse
+    \rehearsalMidi "bass" "baritone sax" \verse
     \midi { }
   }
 }
