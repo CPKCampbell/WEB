@@ -81,7 +81,34 @@ R1*4 r4 cs8 e fs4 e8 d e8. e16 e8 b cs4 r8 cs |
   %19
   e4 e8 e e2\( fs4\) e8 d e4 e r4 fs a gs |
   %22
-
+a1 r2 r4 r8 e cs8. cs16 e4 fs r8 fs |
+  %25
+  e4 e8 b cs4 r8 cs cs4 cs8 e fs4 gs8 a |
+  %27
+  b8. b16 fs4 e r R1 |
+  %29
+  R1 d4 e8 fs e4 e8 gs \time 2/4 fs4 gs8 a |
+  %32
+  \time 4/4 b2. r4 e,4 e8 e e4 (d8) r8 e4 e8 d d4 ( cs8 ) r8 |
+  %35
+  cs4 cs8 a b4 b8 cs d4 e8 d d4. r8 e4 e8 e e4 (d8) r8 |
+  %38
+  e4 e8 e e2\( fs4\) e8 d e4 e |
+  %40
+  r4 d4 fs e e2. r8. cs16 d4 d8 d e8. e16 e8 e |
+  %43
+  fs8. fs16 fs8 fs e4 r8 gs f4 f8 f g4 r8 g |
+  %45
+  a4 a8 a f4 f c'2 (b) R1 \key c \major
+  %48
+  g4 g8 g g4 (f8) r g4 g8 f f4 (e8) r e4 e8 c d4 d8 e |
+  %51
+  f4 g8 f f4. r8 g4 g8 g g4 (f8) r8 g4 g8 g g2\( |
+  %54
+  a4\) g8 f g4 g r a a b a1 |
+  %57
+  r8 a g f e4 e r2 f f f e1~ e |
+  \bar "|"
 }
 
 tenor = \relative c' {
@@ -92,8 +119,17 @@ tenor = \relative c' {
 
 bass = \relative c {
   \global
-  % Music follows here.
-
+  R1*8 fs4 a8 fs e4 gs |
+  %10
+  a8. a16 gs8 fs e4 r fs gs8 a b4 a8 b \time 2/4 a4 gs8 fs |
+  %13
+  \time 4/4 a2 ( gs4) r a4 a8 a d,4. r8 e4 e8 e a,4. r8 |
+  %16
+  fs'4 fs8 cs b4 b8 b e4 e8 e e4. r8 a4 a8 a d,4. r8 |
+  %19
+  e4 d8 d g4 (fs)\( b,\) b8 b cs4 cs r4 a' fs b |
+  %22
+  a1
 }
 
 verse = \lyricmode {
