@@ -129,7 +129,36 @@ bass = \relative c {
   %19
   e4 d8 d g4 (fs)\( b,\) b8 b cs4 cs r4 a' fs b |
   %22
-  a1
+  a1 r2 r4 r8 e8 e8. e16 a4 a r8 a |
+  %25
+  gs4 gs8 b a4 r8 a8 e4 e8 a a4 b8 a |
+  %27
+  b8. b16 a4 gs r8 gs a4 fs8 a gs4 e |
+  %29
+  fs8. fs16 e8 d e4 r fs4 gs8 a b4 a8 b \time 2/4 a4 gs8 fs |
+  %32
+  \time 4/4 a2 ( gs4 ) r4 a4 a8 a d,4. r8 e4 e8 e a,4. r8 |
+  %35
+  fs'4 fs8 cs b4 b8 b e4 e8 e e4. r8 a4 a8 a d,4. r8 |
+  %38
+  e4 d8 d g4 ( fs)\( b,\) b8 b cs4 cs |
+  %r40
+  r4 d e e a2. r8. a,16 d4 d8 d d8. d16 d8 d |
+  %43
+  d8. d16 d8 a' gs4 r8 e f4 f8 f f4 r8 f |
+  %45
+  f4 f8 f c'4 a g1 R1 |
+  %48
+  \key c \major c4 c8 c e,4. r8 g4 g8 g c,4. r8 a'4 a8 a, d4 d8 d |
+  %51
+  g4 g8 g g4. r8 c4 c8 c f,4. r8 g4 f8 f bf4 ( a)\( |
+  %54
+ d,4\) d8 d e4 e r f g g a1 |
+ %57
+ r8 d,8 e f g4 g r2 g g g c,1~ c \fermata |
+ \bar "|"
+
+
 }
 
 verse = \lyricmode {
