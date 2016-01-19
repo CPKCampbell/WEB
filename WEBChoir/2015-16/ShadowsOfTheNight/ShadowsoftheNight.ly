@@ -111,7 +111,43 @@ R1*2 r4 r8 c16 c c8 f f ef |
 
 tenor = \relative c' {
   \global
-  % Music follows here.
+  R1 r2 r4 r8 c16 c c8 f f ef f4 f8 g |
+ %4
+ af8 g f ef c4 r8 c c f f ef f g4 af16 bf |
+ %6
+ c8 bf af g f4 r c8 f f ef f4. f16 g |
+%8
+f8 g af bf c4 r R1 |
+%10
+r4 r8 c16 c c8 bf af g f1 r2 r4 r8 g |
+%13
+af4 af8 g af4. bf8 c bf af g f4 r8 g |
+%15
+af4 af8 g af4. f16 g af8 g f g bf4 r |
+%17
+r4 r8 c,8 c f f f16 g f8 g af bf c2 |
+%19
+r2 r4 r8 c,8 c f f g af g f4 r4 r8 c'16 c c8 bf af g |
+%22
+f1 R1 af4 g8 f af4. g8 |
+%25
+af4 af8 g af4 r af bf8 af bf4 bf |
+%27
+c8 bf c g af4 r af bf8 af g4. g8 |
+%29
+af8 af af g g4 ( f8 ) r f4 g8 af g4 af|
+%31
+af8 af g af d4. r8 bf4 bf8 bf bf4 af f af g8 (af) bf4 |
+%34
+c1 R1*2 |
+%37
+r2 r4 r8 c,8 c f f ef f4 r8 f16 g |
+%39
+af8 g f ef d4 r8 c f af af bf c bf af |
+%41
+r4 r8 c16 c c8 bf af g f1~ f\fermata
+\bar "|"
+
 
 }
 
@@ -229,7 +265,7 @@ pianoPart = \new PianoStaff \with {
 \book {
   \bookOutputSuffix "alto"
   \score {
-    \rehearsalMidi "alto" "soprano sax" \verse
+    \rehearsalMidi "alto" "alto sax" \verse
     \midi { }
   }
 }
@@ -245,8 +281,7 @@ pianoPart = \new PianoStaff \with {
 \book {
   \bookOutputSuffix "bass"
   \score {
-    \rehearsalMidi "bass" "tenor sax" \verse
+    \rehearsalMidi "bass" "baritone sax" \verse
     \midi { }
   }
 }
-
