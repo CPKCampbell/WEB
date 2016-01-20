@@ -16,7 +16,7 @@ global = {
   \key ef \major
   \time 2/2
   \tempo 4=100
-  \partial
+  \partial 2
 }
 
 tenorOne = \relative c' {
