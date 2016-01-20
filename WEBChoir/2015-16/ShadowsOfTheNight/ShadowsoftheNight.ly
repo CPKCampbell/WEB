@@ -22,7 +22,7 @@
 global = {
   \key af \major
   \time 4/4
-  \tempo 4=72
+  \tempo 4=84
   \set Timing.beamExceptions = #'()
   \set Timing.baseMoment = #(ly:make-moment 1/4)
   \set Timing.beatStructure = #'(1 1 1 1)
@@ -109,7 +109,7 @@ R1*2 r4 r8 c16 c c8 f f ef |
  \bar "|"
  }
 
-tenor = \relative c' {
+tenor = \relative c {
   \global
   R1 r2 r4 r8 c16 c c8 f f ef f4 f8 g |
  %4
@@ -137,13 +137,13 @@ c8 bf c g af4 r af bf8 af g4. g8 |
 %29
 af8 af af g g4 ( f8 ) r f4 g8 af g4 af|
 %31
-af8 af g af d4. r8 bf4 bf8 bf bf4 af f af g8 (af) bf4 |
+af8 af g af df4. r8 bf4 bf8 bf bf4 af f af g8 (af) bf4 |
 %34
 c1 R1*2 |
 %37
 r2 r4 r8 c,8 c f f ef f4 r8 f16 g |
 %39
-af8 g f ef d4 r8 c f af af bf c bf af |
+af8 g f ef c4 r8 c f af af bf c bf af4  |
 %41
 r4 r8 c16 c c8 bf af g f1~ f\fermata
 \bar "|"
@@ -183,11 +183,11 @@ df8 df df df ef4. r8 bf' (af) f f ef4 c bf bf c c |
 %34
 f1 R1*2 |
 %37
-r2 r4 r8 c,8 c f f ef f4 r8 f16 g |
+r2 r4 r8 c8 c f f ef f4 r8 f16 g |
 %39
-af8 g f ef d4 r8 c f af af bf c bf af |
+af8 g f ef c4 r8 c df df df df df df df4 |
 %41
-r4 r8 c16 c c8 bf af g f1~ f\fermata
+r4 r8 c'16 c c8 bf af g f1~ f\fermata
 \bar "|"
 
 
@@ -210,7 +210,7 @@ rehearsalMidi = #
      \context Staff = $name {
        \set Score.midiMinimumVolume = #0.5
        \set Score.midiMaximumVolume = #0.5
-       \set Score.tempoWholesPerMinute = #(ly:make-moment 100 4)
+       \set Score.tempoWholesPerMinute = #(ly:make-moment 84 4)
        \set Staff.midiMinimumVolume = #0.8
        \set Staff.midiMaximumVolume = #1.0
        \set Staff.midiInstrument = $midiInstrument
@@ -252,7 +252,7 @@ choirPart = \new ChoirStaff <<
     midiInstrument = "choir aahs"
     instrumentName = "Tenor"
   } {
-    \clef "treble_8"
+    \clef "bass"
     \new Voice = "tenor" \tenor
   }
   \new Lyrics \with {
