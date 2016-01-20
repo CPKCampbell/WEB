@@ -33,7 +33,12 @@ tenorTwo = \relative c' {
 
 bassOne = \relative c {
   \global
-g'4 aaf bf bf bf bf8 bf~ bf4 f f g af4. ( g8 ) g2~ g |
+g'4 af bf bf bf bf8 bf~ bf4 f f g af4. ( g8 ) g2~ |
+g2 g4 af bf bf bf c8 bf~ bf4 af g f8 g g1~ g2. ef8 ef |
+c'4 bf af g f1 bf4 af g f ef2. ef8 ef |
+c'4 g f ef c' g f ef c' g f ef bf'1 ~ bf2 g4 bf |
+c af g f8 c'~ c4 af g f f4. ( ef8 ) e2 \fermata |
+
 }
 
 bassTwo = \relative c {
