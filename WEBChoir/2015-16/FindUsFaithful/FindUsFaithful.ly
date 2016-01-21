@@ -106,7 +106,7 @@ rehearsalMidi = #
      \new Staff = "bass1" \new Voice = "bass1" { \bassOne }
      \new Staff = "bass2" \new Voice = "bass2" { \bassTwo }
      \context Staff = $name {
-       \set Score.midiMinimumVolume = #0.5
+       \set Score.midiMinimumVolume = #0.4
        \set Score.midiMaximumVolume = #0.5
        \set Score.tempoWholesPerMinute = #(ly:make-moment 100 4)
        \set Staff.midiMinimumVolume = #0.8
@@ -123,7 +123,7 @@ rehearsalMidi = #
   <<
     \new ChoirStaff <<
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "alto sax"
         instrumentName = "Tenor I"
         shortInstrumentName = "T. I"
         \consists "Ambitus_engraver"
@@ -135,7 +135,7 @@ rehearsalMidi = #
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "tenor1" \verse
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "tenor sax"
         instrumentName = "Tenor II"
         shortInstrumentName = "T. II"
         \consists "Ambitus_engraver"
@@ -147,7 +147,7 @@ rehearsalMidi = #
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "tenor2" \verse
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "baritone sax"
         instrumentName = "Bass I"
         shortInstrumentName = "B. I"
         \consists "Ambitus_engraver"
@@ -159,7 +159,7 @@ rehearsalMidi = #
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "bass1" \verse
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "bassoon"
         instrumentName = "Bass II"
         shortInstrumentName = "B. II"
         \consists "Ambitus_engraver"
