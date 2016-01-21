@@ -5,7 +5,7 @@
   title = "Find Us Faithful"
   instrument = "Male Chorus - TTBB"
   composer = "Jon Mohr"
-  poet = "jon Mohr"
+  poet = "Jon Mohr"
   arranger = "arr. CPKCMusic"
 }
 
@@ -14,50 +14,50 @@
 }
 
 global = {
-  \key ef \major
+  \key f \major
   \numericTimeSignature
   \time 2/2
-  \tempo 4=100
-  \partial 2
+  \tempo 8=100
+  \partial 4
 }
 
-tenorOne = \relative c' {
+tenorOne = \relative c {
   \global
-ef4 ef f f ef ef8 d~ d4 d d d ef2 ef ~ ef2 ef4 ef |
-f f ef ef8 d~ d4 d d d ef1 ( d2.)  c8 c |
-c4 c c ef d1 d4 c ef d c2. c8 c |
-ef4 ef ef ef ef ef ef ef ef1 (d2) d4 d |
-ef4 ef d d8 ef~ ef4 ef d c c2 bf |
+f8 f g g f f16 e~ e8 e e e f4 f ~ f4 f8 f |
+g g f f16 e~ e8 e e e f2 ( e4.)  d16 d |
+d8 d d f e2 e8 d f e d4. d16 d |
+f8 f f f f f f f f2 (e4) e8 e |
+f8 f e e16 f~ f8 f e d d4 c2. \fermata |
 
 }
 
 tenorTwo = \relative c' {
   \global
-  bf4 bf bf bf af af8 f~ f4 bf bf bf c4. (bf8) bf2 ~ |
-  bf2 bf4 bf bf bf af af8 f~ f4 f g g g1~ |
-  g2. g8 g c,4 c af' c bf1 g4 f bf af g2. g8 g |
-  bf4 bf bf bf a a a a af1~ |
-  af2 g4 g af c bf bf8 af~ af4 c bf af af2 g \fermata
+  c8 c c c bf bf16 g~ g8 c c c d8. (c16) c4 ~  c4 c8 c
+  c8 c bf bf16 g~ g8 g a a a2~  a4. a16 a |
+  d,8 d bf' d c2 a8 g c bf a4. a16 a |
+  c8 c c c b b b b bf2~ bf4 a8 a
+  bf8 d c c16 bf~ bf8 d c bf bf4 a2.\fermata
 }
 
-bassOne = \relative c {
+bassOne = \relative c' {
   \global
-  g'4 af bf bf bf bf8 bf~ bf4 f f g af4. ( g8 ) g2~ |
-  g2 g4 af bf bf bf c8 bf~ bf4 af g f8 g g1~ g2. ef8 ef |
-  c'4 bf af g f1 bf4 af g f ef2. ef8 ef |
-  c'4 g f ef c' g f ef  bf'1 ~ bf2 g4 bf |
+  a8 bf c c c c16 c~ c8 g g a bf8. ( a16 ) a4~  a4 a8 bf
+  c8 c c d16 c~ c8 bf a g16 a a2~ a4. f16 f |
+  d'8 c bf a g2 c8 bf a g f4. f16 f |
+  d'8 a g f d' a g f  c'2 ~ c4 a8 c |
   %16
-  c af g f8 c'~ c4 af g f f4. ( ef8 ) ef2 \fermata |
+  d bf a g16 d'~ d8 bf a g g8. ( f16 ) f2. \fermata |
 
 }
 
 bassTwo = \relative c {
   \global
-  ef4 ef d d c c8 bf~ bf4 bf bf bf ef2 ef~ ef2 ef4 ef  |
-  d d c c8 bf~ bf4 bf b b c1 ( bf2. ) bf8 bf  |
-  af4 af af af af1 g4 af bf b |
-  c2. c8 c f4 f f f f f f f bf,1~ |
-  bf2 bf4 bf f f g g8 af~ af4 af bf bf ef2  ef \fermata
+  f8 f e e d d16 c~ c8 c c c f4 f~ f4 f8 f  |
+  e e d d16 c~ c8 c cs cs d2 ( c4. ) c16 c  |
+  bf8 bf bf bf bf2 a8 bf c cs  d4. d16 d  |
+  g8 g g g g g g g c,2~ c4 c8 c |
+  g8 g a a16 bf~ bf8 bf c c f2  f \fermata
   \bar "|"
 }
 
