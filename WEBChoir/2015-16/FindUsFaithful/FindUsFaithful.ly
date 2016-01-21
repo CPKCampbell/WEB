@@ -5,7 +5,8 @@
   title = "Find Us Faithful"
   instrument = "Male Chorus - TTBB"
   composer = "Jon Mohr"
-  arranger = "CPKCMusic"
+  poet = "jon Mohr"
+  arranger = "arr. CPKCMusic"
 }
 
 \paper {
@@ -14,6 +15,7 @@
 
 global = {
   \key ef \major
+  \numericTimeSignature
   \time 2/2
   \tempo 4=100
   \partial 2
@@ -21,32 +23,42 @@ global = {
 
 tenorOne = \relative c' {
   \global
-bf4 bf bf bf af af8 f~ f4 bf bf bf c4. (bf8) bf2 ~ |
-bf2 bf4 bf bf bf af af8 f~ f4 f g g g1~ |
-g2. g8 g bf4 bf bf bf a a a a af1~ |
-af2 g4 g af c bf bf8 af~ af4 c bf af af2 g \fermata
-\bar "|"
+ef4 ef f f ef ef8 d~ d4 d d d ef2 ef ~ ef2 ef4 ef |
+f f ef ef8 d~ d4 d d d ef1 ( d2.)  c8 c |
+c4 c c ef d1 d4 c ef d c2. c8 c |
+ef4 ef ef ef ef ef ef ef ef1 (d2) d4 d |
+ef4 ef d d8 ef~ ef4 ef d c c2 bf |
+
 }
 
 tenorTwo = \relative c' {
   \global
-  % Music follows here.
+  bf4 bf bf bf af af8 f~ f4 bf bf bf c4. (bf8) bf2 ~ |
+  bf2 bf4 bf bf bf af af8 f~ f4 f g g g1~ |
+  g2. g8 g c,4 c af' c bf1 g4 f bf af g2. g8 g |
+  bf4 bf bf bf a a a a af1~ |
+  af2 g4 g af c bf bf8 af~ af4 c bf af af2 g \fermata
 }
 
 bassOne = \relative c {
   \global
-g'4 af bf bf bf bf8 bf~ bf4 f f g af4. ( g8 ) g2~ |
-g2 g4 af bf bf bf c8 bf~ bf4 af g f8 g g1~ g2. ef8 ef |
-c'4 bf af g f1 bf4 af g f ef2. ef8 ef |
-c'4 g f ef c' g f ef c' g f ef bf'1 ~ bf2 g4 bf |
-c af g f8 c'~ c4 af g f f4. ( ef8 ) e2 \fermata |
+  g'4 af bf bf bf bf8 bf~ bf4 f f g af4. ( g8 ) g2~ |
+  g2 g4 af bf bf bf c8 bf~ bf4 af g f8 g g1~ g2. ef8 ef |
+  c'4 bf af g f1 bf4 af g f ef2. ef8 ef |
+  c'4 g f ef c' g f ef  bf'1 ~ bf2 g4 bf |
+  %16
+  c af g f8 c'~ c4 af g f f4. ( ef8 ) ef2 \fermata |
 
 }
 
 bassTwo = \relative c {
   \global
-  % Music follows here.
-
+  ef4 ef d d c c8 bf~ bf4 bf bf bf ef2 ef~ ef2 ef4 ef  |
+  d d c c8 bf~ bf4 bf b b c1 ( bf2. ) bf8 bf  |
+  af4 af af af af1 g4 af bf b |
+  c2. c8 c f4 f f f f f f f bf,1~ |
+  bf2 bf4 bf f f g g8 af~ af4 af bf bf ef2  ef \fermata
+  \bar "|"
 }
 
 verse = \lyricmode {
@@ -116,7 +128,7 @@ rehearsalMidi = #
         shortInstrumentName = "T. I"
         \consists "Ambitus_engraver"
       } {
-        \clef "treble_8"
+        \clef "bass"
         \new Voice = "tenor1" \tenorOne
       }
       \new Lyrics \with {
@@ -128,7 +140,7 @@ rehearsalMidi = #
         shortInstrumentName = "T. II"
         \consists "Ambitus_engraver"
       } {
-        \clef "treble_8"
+        \clef "bass"
         \new Voice = "tenor2" \tenorTwo
       }
       \new Lyrics \with {
