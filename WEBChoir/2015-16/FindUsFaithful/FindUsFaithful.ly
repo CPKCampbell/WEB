@@ -21,14 +21,16 @@ global = {
 
 tenorOne = \relative c' {
   \global
-  % Music follows here.
-
+bf4 bf bf bf af af8 f~ f4 bf bf bf c4. (bf8) bf2 ~ |
+bf2 bf4 bf bf bf af af8 f~ f4 f g g g1~ |
+g2. g8 g bf4 bf bf bf a a a a af1~ |
+af2 g4 g af c bf bf8 af~ af4 c bf af af2 g \fermata
+\bar "|"
 }
 
 tenorTwo = \relative c' {
   \global
   % Music follows here.
-
 }
 
 bassOne = \relative c {
