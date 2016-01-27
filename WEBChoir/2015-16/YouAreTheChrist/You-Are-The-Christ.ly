@@ -7,6 +7,12 @@
   composer = "Lloyd Larson"
   poet = "Jan McGuire"
 }
+\paper {
+  #(set-paper-size "letter")
+  ragged-bottom = ##f
+  bottom-margin = 10.0\mm
+ % annotate-spacing = ##t
+}
 
 \layout {
   \context {
@@ -87,7 +93,7 @@ alto = \relative c' {
   %27
   b8. b16 fs4 e r R1 |
   %29
-  R1 d4 e8 fs e4 e8 gs \time 2/4 fs4 gs8 a |
+  R1 d4 e8 fs e4 a8 gs \time 2/4 fs4 gs8 a |
   %32
   \time 4/4 b2. r4 e,4 e8 e e4 (d8) r8 e4 e8 d d4 ( cs8 ) r8 |
   %35
@@ -150,7 +156,7 @@ tenor = \relative c {
   %54
   d4\) a8 a c4 c r4 c c f e1 |
   %57
-  r8 d c a c4 c r2 a c b <c g>1~ q \fermata
+  r8 d c a c4 c r2 a c b c1~ c \fermata
   \bar "|"
 }
 
@@ -186,13 +192,13 @@ bass = \relative c {
   %45
   f4 f8 f c'4 a g1 R1 |
   %48
-  \key c \major c4 c8 c e,4. r8 g4 g8 g c,4. r8 a'4 a8 a, d4 d8 d |
+  \key c \major c4 c8 c f,4. r8 g4 g8 g c,4. r8 a'4 a8 a, d4 d8 d |
   %51
   g4 g8 g g4. r8 c4 c8 c f,4. r8 g4 f8 f bf4 ( a)\( |
   %54
   d,4\) d8 d e4 e r f g g a1 |
   %57
-  r8 d,8 e f g4 g r2 g g g c,1~ c \fermata |
+  r8 d,8 e f g4 g r2 g g g <g c,>1~ q \fermata |
   \bar "|"
 
 
@@ -286,7 +292,7 @@ pianoPart = \new PianoStaff \with {
 \score {
   <<
     \choirPart
-    \pianoPart
+%    \pianoPart
   >>
   \layout { }
   \midi {
