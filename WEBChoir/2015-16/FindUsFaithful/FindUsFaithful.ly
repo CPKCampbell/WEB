@@ -16,38 +16,44 @@
 global = {
   \key f \major
   \numericTimeSignature
-  \time 2/2
-  \tempo 8=100
+  \time 4/4
+  \tempo 4=92
   \partial 4
 }
 
 tenorOne = \relative c {
   \global
-f8 f g g f f16 e~ e8 e e e f4 f ~ f4 f8 f |
-g g f f16 e~ e8 e e e f2 ( e4.)  d16 d |
-d8 d d f e2 e8 d f e d4. d16 d |
-f8 f f f f f f f f2 (e4) e8 e |
-f8 f e e16 f~ f8 f e d d4 c2. \fermata |
+  % intro on piano 9 bars
+  s1*7 \time 2/4 s2 \time 4/4 s1
+  r2 r4 r8 b e b16 e~ e8 fs16 a~ a gs8. r8 fs16 e ds8 e16 cs~ cs2 |
 
-}
+  %
 
-tenorTwo = \relative c' {
-  \global
-  c8 c c c bf bf16 g~ g8 c c c d8. (c16) c4 ~  c4 c8 c
-  c8 c bf bf16 g~ g8 g a a a2~  a4. a16 a |
-  d,8 d bf' d c2 a8 g c bf a4. a16 a |
-  c8 c c c b b b b bf2~ bf4 a8 a
-  bf8 d c c16 bf~ bf8 d c bf bf4 a2.\fermata
-}
-
-bassOne = \relative c' {
-  \global
-  a8 bf c c c c16 c~ c8 g g a bf8. ( a16 ) a4~  a4 a8 bf
+  f8 bf c c c c16 c~ c8 g g a bf8. ( a16 ) a4~  a4 a8 bf
   c8 c c d16 c~ c8 bf a g16 a a2~ a4. f16 f |
   d'8 c bf a g2 c8 bf a g f4. f16 f |
   d'8 a g f d' a g f  c'2 ~ c4 a8 c |
   %16
   d bf a g16 d'~ d8 bf a g g8. ( f16 ) f2. \fermata |
+}
+
+tenorTwo = \relative c' {
+  \global
+
+  c8 c c c bf bf16 g~ g8 c c c d8. (c16) c4 ~  c4 c8 c
+  c8 c bf bf16 g~ g8 g a a a2~  a4. a16 a |
+  f8 f bf d c2 a8 g c bf a4. a16 a |
+  c8 c c c b b b b bf2~ bf4 a8 a
+  bf8 d c c16 bf~ bf8 d c bf bf4 a2.\fermata
+}
+
+bassOne = \relative c {
+  \global
+  f8 f g g f f16 e~ e8 e e e f4 f ~ f4 f8 f |
+  g g f f16 e~ e8 e e e f2 ( e4.)  d16 d |
+  d8 d d f e2 e8 d f e d4. d16 d |
+  f8 f f f f f f f f2 (e4) e8 e |
+  f8 f e e16 f~ f8 f e d d4 c2. \fermata |
 
 }
 
@@ -68,6 +74,10 @@ verse = \lyricmode {
 
 pianoR = \relative c' {
   \global
+  %{
+  \chordmode {
+    f1:5 f g4:m7 f:9/a bf:maj9 bf:/c }
+  %}
 }
 
 pianoL = \relative c {
@@ -108,7 +118,7 @@ rehearsalMidi = #
      \context Staff = $name {
        \set Score.midiMinimumVolume = #0.4
        \set Score.midiMaximumVolume = #0.5
-       \set Score.tempoWholesPerMinute = #(ly:make-moment 100 4)
+       \set Score.tempoWholesPerMinute = #(ly:make-moment 92 4)
        \set Staff.midiMinimumVolume = #0.8
        \set Staff.midiMaximumVolume = #1.0
        \set Staff.midiInstrument = $midiInstrument
