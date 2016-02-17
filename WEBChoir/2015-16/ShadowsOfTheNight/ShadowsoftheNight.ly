@@ -9,8 +9,11 @@
 }
 
 \paper {
-  #(set-paper-size "letter")
+ #(set-paper-size "letter")
+  bottom-margin = 10\mm
+  ragged-bottom = ##f
 }
+
 \layout {
   \context {
     \Voice
@@ -266,7 +269,7 @@ choirPart = \new ChoirStaff <<
     \new Voice = "bass" \bass
   }
 >>
-
+%{
 pianoPart = \new PianoStaff \with {
   instrumentName = "Piano"
 } <<
@@ -277,11 +280,11 @@ pianoPart = \new PianoStaff \with {
     midiInstrument = "acoustic grand"
   } { \clef bass \left }
 >>
-
+%}
 \score {
   <<
     \choirPart
-    \pianoPart
+%    \pianoPart
   >>
   \layout { }
   \midi {
