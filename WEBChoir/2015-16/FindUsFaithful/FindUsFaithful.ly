@@ -14,18 +14,18 @@
 }
 
 global = {
-  \key f \major
+  \key e\major
   \numericTimeSignature
   \time 4/4
   \tempo 4=92
-  \partial 4
+
 }
 
 tenorOne = \relative c {
   \global
   % intro on piano 9 bars
-  s1*7 \time 2/4 s2 \time 4/4 s1
-  r2 r4 r8 b e b16 e~ e8 fs16 a~ a gs8. r8 fs16 e ds8 e16 cs~ cs2 |
+s1*7 \time 2/4 R2 \time 4/4 R1
+r2 r4 r8  b8 e b16 e~ e8 fs16 a~ a gs8. r8 fs16 e ds8 e16 cs~ cs2 |
 
   %
 
@@ -36,7 +36,7 @@ tenorOne = \relative c {
   %16
   d bf a g16 d'~ d8 bf a g g8. ( f16 ) f2. \fermata |
 }
-
+%{
 tenorTwo = \relative c' {
   \global
 
@@ -66,6 +66,7 @@ bassTwo = \relative c {
   g8 g a a16 bf~ bf8 bf c c f2  f \fermata
   \bar "|"
 }
+%}
 
 verse = \lyricmode {
   % Lyrics follow here.
@@ -138,7 +139,7 @@ rehearsalMidi = #
         shortInstrumentName = "T. I"
         \consists "Ambitus_engraver"
       } {
-        \clef "bass"
+        \clef "treble_8"
         \new Voice = "tenor1" \tenorOne
       }
       \new Lyrics \with {
@@ -151,11 +152,13 @@ rehearsalMidi = #
         \consists "Ambitus_engraver"
       } {
         \clef "bass"
-        \new Voice = "tenor2" \tenorTwo
+%        \new Voice = "tenor2" \tenorTwo
       }
+      %{
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
       } \lyricsto "tenor2" \verse
+    
       \new Staff \with {
         midiInstrument = "baritone sax"
         instrumentName = "Bass I"
@@ -163,7 +166,7 @@ rehearsalMidi = #
         \consists "Ambitus_engraver"
       } {
         \clef bass
-        \new Voice = "bass1" \bassOne
+  %      \new Voice = "bass1" \bassOne
       }
       \new Lyrics \with {
         \override VerticalAxisGroup #'staff-affinity = #CENTER
@@ -177,13 +180,14 @@ rehearsalMidi = #
         \clef bass
         \new Voice = "bass2" \bassTwo
       }
+%}
     >>
     \accomp
   >>
   \layout { }
   \midi { }
 }
-
+%{
 % Rehearsal MIDI files:
 \book {
   \bookOutputSuffix "tenor1"
@@ -216,3 +220,4 @@ rehearsalMidi = #
     \midi { }
   }
 }
+%}
