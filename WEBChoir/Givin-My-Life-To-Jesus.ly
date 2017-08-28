@@ -4,8 +4,8 @@
 \header {
   title = "Givin’ My Life To Jesus"
   subtitle = "He’s My Lord"
-  composer = "Folk Melody"
-  arranger = "Colin Campbell"
+  composer = "Folk Melody/Campbell"
+  arranger = ""
   poet = "Colin Campbell"
   tagline = "Engraved by CPKC.Music"
 }
@@ -69,13 +69,13 @@ alto = \relative c' {
 
 verseOne = \lyricmode {
   \set stanza = "1."
-  Giv -- in' my life to Je -- sus
+  Giv -- in' my life to Je -- sus,
   He's my Lord.
-  Giv -- in' my life to Je -- sus
+  Giv -- in' my life to Je -- sus,
   He's my Lord.
-  Giv -- in' up my sin -- ful ways
+  Giv -- in' up my sin -- ful ways,
   and liv -- in' as the Bi -- ble says
-  Giv -- in' my life to Je -- sus
+  Giv -- in' my life to Je -- sus,
   He's my Lord.
   %
   Lord.
@@ -83,25 +83,25 @@ verseOne = \lyricmode {
 
 verseTwo = \lyricmode {
   \set stanza = "2."
-  Go -- _  in’ up that glo -- ry road with Him
-  Go -- _  in’ up that glo -- ry road with Him
-  And we're walk -- in’ hand in hand
-  He’ll lead me to that pro -- mised land,
+  Go -- _  in’ up that glo -- ry road with Him.
+  Go -- _  in’ up that glo -- ry road with Him.
+  And we're walk -- in’ hand in hand,
+  He’ll lead me to that pro -- mised land.
   Go -- _  in’ up that glo -- ry road with Him.
 Him.
 }
 
 verseThree = \lyricmode {
   \set stanza = "3."
-  Gon -- na tell all my friends the Gos -- pel news
-  Gon -- na tell all my friends the Gos -- pel news
-  Let them know that they can choose
+  Gon -- na tell all my friends the Gos -- pel news:
+  Gon -- na tell all my friends the Gos -- pel news:
+  Let them know that they can choose,
   And that will chase a -- way the blues.
-  Gon -- na tell all my friends the Gos -- pel news
+  Gon -- na tell all my friends the Gos -- pel news.
 news.
 %
  \set stanza = "4."
-  Gon -- _  na cross that Riv -- er Jor -- dan soon
+  Gon -- _  na cross that Riv -- er Jor -- dan soon;
    Gon -- _  na cross that Riv -- er Jor -- dan soon;
    show me the way!
    Sis -- ters, broth -- ers come on down!
