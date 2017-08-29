@@ -118,7 +118,7 @@ scoreARehearsalMidi = #
   \score {
     \new ChoirStaff <<
       \new Staff \with {
-        midiInstrument = "choir aahs"
+        midiInstrument = "voice oohs"
       } <<
         \clef "treble_8"
         \new Voice = "tenor" { \voiceOne \scoreATenor }
