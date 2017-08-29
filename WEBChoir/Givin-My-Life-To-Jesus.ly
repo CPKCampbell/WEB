@@ -4,9 +4,9 @@
 \header {
   title = "Givin’ My Life To Jesus"
   subtitle = "He’s My Lord"
-  composer = "Folk Melody/Campbell"
+  composer = "C. Campbell/Folk Melody"
   arranger = ""
-  poet = "Colin Campbell"
+  poet = "Campbell"
   tagline = "Engraved by CPKC.Music"
 }
 
