@@ -113,7 +113,7 @@ verseThree = \lyricmode {
   show me the way!
   Sis -- ters, broth -- ers let's go down!
   Let's go down, come  on down,
-  O, peo -- ple let's go down,
+  O, sist -- ers let's go down,
   giv -- 'in my life,
   giv -- 'in my life,
   come on down to pray.
@@ -154,7 +154,7 @@ verseAltoThree = \lyricmode {
   stud -- y -- in’ a -- bout that good old way,
   and who shall wear the star -- ry crown,
   Good Lord, show me the way.
-  O, sist -- ers, let’s go down,  let’s go down,
+  O, broth -- ers, let’s go down,  let’s go down,
   come on down.
   O, sist -- ers, let’s go down,
   down in the riv -- er
