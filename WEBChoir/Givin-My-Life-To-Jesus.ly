@@ -4,16 +4,21 @@
 \header {
   title = "Givin’ My Life To Jesus"
   subtitle = "He’s My Lord"
-  composer = "Folk Melody"
-  arranger = "Colin Campbell"
-  poet = "Colin Campbell"
+  composer = "C. Campbell"
+
+  poet = "C. Campbell"
   tagline = "Engraved by CPKC.Music"
 }
 
+#(set-global-staff-size 18)
+
 \paper {
   #(set-paper-size "letter")
+  systems-count = #9
   systems-per-page = #3
- % annotate-spacing = ##t
+  % annotate-spacing = ##t
+  ragged-last-bottom = ##t
+
 }
 
 
@@ -33,14 +38,14 @@ soprano = \relative c'' {
     \tuplet 3/2 { b4 b b } b4.  c8 b4  a g4 fs
   }
   \alternative {
-    { g1~ g }
+    { g1 }
     {g1~ g }
   }
   %
   \tuplet 3/2 { g4 g g } g4.  b8 a4 g \tuplet 3/2 { d4 (e )fs }  g1
   \tuplet 3/2 { b4 b b } b4. d8 c4 b g4 b b1
   b8 b4 g8 fs2
-  d'4 b c b b d \acciaccatura c8 ( b2 ) b4 b b2
+  d'4 b c b b d  b2  b4 b b2
   b8 b~ b4  a4.  r8
   c2 4 4 b4 b b2
   \tuplet 3/2 { g4 g g } g2
@@ -59,7 +64,7 @@ alto = \relative c' {
     R1 r2  g4. fs8
   }
   \alternative {
-    { g1~ g}
+    { g1}
     { g1 r4 r8 d d4 e }
   }
   %vs 4
@@ -187,12 +192,15 @@ rehearsalMidi = #
  #})
 
 \score {
+
   \new ChoirStaff <<
     \new Staff \with {
       midiInstrument = "voice oohs"
       instrumentName = "I"
       shortInstrumentName = "I"
-    } \new Voice = "soprano" \soprano
+    }
+    
+    \new Voice = "soprano" \soprano
     \new Lyrics \with {
       \override VerticalAxisGroup #'staff-affinity = #UP
     } \lyricsto "soprano" \verseOne
@@ -205,6 +213,7 @@ rehearsalMidi = #
     \new Lyrics \with {
       \override VerticalAxisGroup #'staff-affinity = #UP
     } \lyricsto "soprano" \verseFour
+
     \new Staff \with {
       midiInstrument = "choir aahs"
       instrumentName = "II"
@@ -222,6 +231,7 @@ rehearsalMidi = #
     \new Lyrics \with {
       \override VerticalAxisGroup #'staff-affinity = #UP
     } \lyricsto "alto" \verseAltoFour
+
   >>
   \layout {
     \context {
@@ -230,7 +240,7 @@ rehearsalMidi = #
     }
     \context {
       \Score
-      \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 20))
+      \override VerticalAxisGroup.staff-staff-spacing = #'((basic-distance . 15))
     }
 
   }
